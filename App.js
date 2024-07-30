@@ -1,11 +1,10 @@
-
 /*Reactが提供する関数をインポート*/
-import React, { /*useEffect,*/ useState } from 'react'; //タイマー利用時にuseEffectのコメント解除
+import React, { /*useEffect,*/ useState } from 'react'; //タイマー利用時にuseEffectのコメントアウト解除
 /*以下四行で利用するMUIをインポート*/
 import { Button, ButtonGroup, Typography, Stack, Box } from '@mui/material';
 import AutorenewIcon from '@mui/icons-material/Autorenew';
 //import PlayArrowIcon from '@mui/icons-material/PlayArrow'; //タイマー利用時にコメントアウト解除
-//import StopIcon from '@mui/icons-material/Stop';　//タイマー利用時にコメントアウト解除
+//import StopIcon from '@mui/icons-material/Stop'; //タイマー利用時にコメントアウト解除
 
 //カウンターコンポーネント
 const Counter = () => {
@@ -50,8 +49,9 @@ const Counter = () => {
   );
 };
 
-/*
+
 //タイマーコンポーネント
+/*
 const Timer = () => {
   const INITIAL_COUNT = 0; //初期値
   const HUND_MSEC = 100; //今回は100ミリ秒経過毎にmsecをインリメントする
@@ -139,7 +139,7 @@ export default function App()
       }}>
         <Stack spacing={5}>
           <Counter />
-          {/*<Timer />*/}
+          {/*<Timer />*/} {/*タイマー利用時にコメントアウト解除*/}
         </Stack>
       </Box>
     </center>
